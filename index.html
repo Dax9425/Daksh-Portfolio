@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mistry Daksh | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0f0f0f;
+            color: #fff;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            padding: 60px 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: #00fff7;
+            text-shadow: 0 0 20px #00fff7;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #00ffc8;
+            margin-bottom: 30px;
+        }
+
+        .grid {
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .card {
+            background: #1c1c1c;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            background: #2b2b2b;
+            color: #fff;
+        }
+
+        .contact-form button {
+            padding: 15px;
+            background: #00ffc8;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            font-size: 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #00a38c;
+        }
+
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        a {
+            color: #00ffc8;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Mistry Daksh</h1>
+        <p>Cybersecurity Enthusiast | Forensics & VAPT Learner | Android Dev</p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            👋 Hi, I’m Daksh Mistry, a 4th-year B.Tech student specializing in Cybersecurity at Silver Oak University,
+            with a solid foundation in 💻 Computer Engineering from Government Polytechnic, Ahmedabad.
+            🔐 My passion lies in safeguarding digital infrastructure through hands-on experience in ethical hacking,
+            penetration testing, threat analysis, and network defense.<br>
+            <br>
+            🚀 Over the years, I’ve built a strong portfolio of projects — from developing a 📱 Document Security App in
+            Android Studio using Java, to creating a 🐍 Python-based Keylogger using the pynput module.
+            I’ve also worked on real-time applications like a ✈️ Tours & Travel Management System and a 📋 To-Do List
+            Android App, combining usability with secure coding practices.<br>
+            <br>
+            🧠 My cybersecurity journey is backed by practical learning through internships at INTECH Creative Services
+            and Prodigy InfoTech, along with certifications from 🛡️ EC-Council, 📘 LinkedIn Learning, 🎓 Udemy, and 🧪
+            Hack The Box.
+            I’ve tackled challenges like SQL injection attacks, password cracking, and explored advanced tools like 🛠️
+            Metasploit, 🔍 Nmap, and 🔥 Firewalls in simulated environments.<br>
+            <br>
+            🎯 I’m constantly pushing my limits through CTF challenges, seminars, and collaborative projects.
+            With strong skills in 💡 Python, 💾 Bash, 🌐 Networking, and a mindset rooted in ⚡ quick learning, 🤝
+            effective communication, and 🧑‍🤝‍🧑 teamwork, I aim to contribute to organizations by strengthening their
+            cybersecurity posture and innovating safer systems.<br>
+            <br>
+            🕵️‍♂️ If you’re looking for someone who’s ready to detect vulnerabilities before the hackers do, and
+            passionate about real-world cybersecurity challenges, let’s connect!
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Tools</h2>
+        <div class="grid">
+            <div class="card">👾 Bash ( Scripting )</div>
+            <div class="card">🐍 Python</div>
+            <div class="card">📱 Android (Java, Android Studio)</div>
+            <div class="card">🛜 Networking ( Firewall )</div>
+            <div class="card">🖊️ Pen. Testing</div>
+            <div class="card">🗺️ Nmap ( Netwok Scanning )</div>
+            <div class="card">🚩 CTF ( THM , HTB )</div>
+            <div class="card">🐀 Android RATs ( tools like CypherRAT , 888RAT )</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🛡️ Document Security Application</h3>
+                <p> It is a simple application which hides confidential or secret documents and provide security. In
+                    this application i implemented MFA ( Multi-Fector-Authentication ) 1. OTP 2. FaceRec. 3. BioMetric .
+                </p>
+            </div>
+            <div class="card">
+                <h3>🔑 Simple KeyLogger </h3>
+                <p> I created a simple KeyLogger using python. In this project I use python's
+                    pynput module. Using this module I can create keyboard and mouse listeners and
+                    print letters into log file.</p>
+            </div>
+            <div class="card">
+                <h3>🔁 Caesar Cipher Tool</h3>
+                <p>Python CLI tool for encoding/decoding text using Caesar cipher logic. Created as part of Prodigy
+                    internship tasks.</p>
+            </div>
+            <div class="card">
+                <h3>📃 To Do List ( Android Application )</h3>
+                <p> It’s an Application where user can add tasks and when it completed user
+                    can tick mark it. I made this application with android studio.</p>
+            </div>
+            <div class="card">
+                <h3>🧳 Blue Fly ( Tours and Travel Management Website )</h3>
+                <p> This is a website where User can Book Tours and service providers
+                    provide different Tours like manali trip , leh ladak trip etc. Here Service Provide Have
+                    flexibity to modify their tour Service Provider can change date of tour and also prise
+                    of tour. This is simple and basic Tours and Travel Management System.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="https://formspree.io/f/mwpodwry" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required />
+            <input type="email" name="_replyto" placeholder="Your Email" required />
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mistry Daksh. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
